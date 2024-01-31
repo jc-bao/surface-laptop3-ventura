@@ -33,10 +33,10 @@
 | Keyboard | ✅ | |
 | Battery | ✅ | |
 | Bluetooth | ✅ | |
+| Front camera | ✅ | Working with USB mapping. |
 | Graphics Acceleration | ✅ | |
 | WiFi | ✅ | Airdrop, Handoff, Sidecar are not working. This is a known issue for `itlwm`. |
 | Touchscreen | ❌ | You can fix it by installing certain software, but I don't need it. |
-| Front camera | ❌ | Can be fixed by USB mapping. I will try to fix it later. |
 | Sleep | ❌ | Cannot wake up from sleep. |
 
 

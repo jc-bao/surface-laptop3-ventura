@@ -6,41 +6,25 @@
 	<dict/>
 	<key>files2</key>
 	<dict>
+		<key>PlugIns/BigSurfaceHIDDriver.kext</key>
+		<dict>
+			<key>symlink</key>
+			<string>/Users/xavier/Library/Developer/Xcode/DerivedData/BigSurface-cddrjlujelxnaqfuhouutiwheyyr/Build/Intermediates.noindex/ArchiveIntermediates/BigSurface/InstallationBuildProductsLocation/System/Library/Extensions/BigSurfaceHIDDriver.kext</string>
+		</dict>
 		<key>PlugIns/VoodooGPIO.kext</key>
 		<dict>
-			<key>cdhash</key>
-			<data>
-			zdw8iDI2UU+/Q32ia6Ija7v6w5A=
-			</data>
-			<key>requirement</key>
-			<string>cdhash H"35b6003806105999c74d90dde680c84391f2d9fa" or cdhash H"cddc3c883236514fbf437da26ba2236bbbfac390"</string>
-		</dict>
-		<key>PlugIns/VoodooI2CServices.kext</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			mIdgOM/obJauT89dUfdnsdgJ0yM=
-			</data>
-			<key>requirement</key>
-			<string>cdhash H"6f51184f8e3c93402990f56f3969bb8a301b7add" or cdhash H"98876038cfe86c96ae4fcf5d51f767b1d809d323"</string>
+			<key>symlink</key>
+			<string>/Users/xavier/Library/Developer/Xcode/DerivedData/BigSurface-cddrjlujelxnaqfuhouutiwheyyr/Build/Intermediates.noindex/ArchiveIntermediates/BigSurface/InstallationBuildProductsLocation/System/Library/Extensions/VoodooGPIO.kext</string>
 		</dict>
 		<key>PlugIns/VoodooInput.kext</key>
 		<dict>
-			<key>cdhash</key>
-			<data>
-			Tr2ssHAnkEHNTlYAwZbwUogDyms=
-			</data>
-			<key>requirement</key>
-			<string>cdhash H"1ffe108e3ab66b3e25ac18239463cfbdd660992d" or cdhash H"4ebdacb070279041cd4e5600c196f0528803ca6b"</string>
+			<key>symlink</key>
+			<string>/Users/xavier/Library/Developer/Xcode/DerivedData/BigSurface-cddrjlujelxnaqfuhouutiwheyyr/Build/Intermediates.noindex/ArchiveIntermediates/BigSurface/InstallationBuildProductsLocation/System/Library/Extensions/VoodooInput.kext</string>
 		</dict>
 		<key>PlugIns/VoodooSerial.kext</key>
 		<dict>
-			<key>cdhash</key>
-			<data>
-			IGKzwHR/SLbaJPhOxZvl0YK/9QM=
-			</data>
-			<key>requirement</key>
-			<string>cdhash H"ac5c7c685786f9e49510f5d3cea0c7945e782060" or cdhash H"2062b3c0747f48b6da24f84ec59be5d182bff503"</string>
+			<key>symlink</key>
+			<string>/Users/xavier/Library/Developer/Xcode/DerivedData/BigSurface-cddrjlujelxnaqfuhouutiwheyyr/Build/Intermediates.noindex/ArchiveIntermediates/BigSurface/InstallationBuildProductsLocation/System/Library/Extensions/VoodooSerial.kext</string>
 		</dict>
 	</dict>
 	<key>rules</key>

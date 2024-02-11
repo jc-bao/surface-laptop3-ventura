@@ -36,7 +36,7 @@
 | Front camera | ✅ | Working with USB mapping. |
 | Graphics Acceleration | ✅ | |
 | WiFi | ✅ | Airdrop, Handoff, Sidecar are not working. This is a known issue for `itlwm`. |
-| Touchscreen | ❌ | You can fix it by installing certain software, but I don't need it. |
+| Touchscreen | ✅ | For multi-touch, you need to install IPTSDaemon. |
 | Sleep | ❌ | Cannot wake up from sleep. |
 
 

@@ -3,43 +3,43 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>22A380</string>
+	<string>23F79</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>BigSurfaceHIDDriver</string>
+	<string>BigSurface</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.xavier.BigSurfaceHIDDriver</string>
+	<string>com.xavier.BigSurface</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>BigSurfaceHIDDriver</string>
+	<string>BigSurface</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.6</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.6</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>14C18</string>
+	<string></string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>13.1</string>
+	<string>14.5</string>
 	<key>DTSDKBuild</key>
-	<string>22C55</string>
+	<string>23F73</string>
 	<key>DTSDKName</key>
-	<string>macosx13.1</string>
+	<string>macosx14.5</string>
 	<key>DTXcode</key>
-	<string>1420</string>
+	<string>1540</string>
 	<key>DTXcodeBuild</key>
-	<string>14C18</string>
+	<string>15F31d</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Custom MT2 Personality</key>
@@ -487,7 +487,7 @@
 		<key>Intel Precise Touch &amp; Stylus Driver</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>IOClass</key>
 			<string>IntelPreciseTouchStylusDriver</string>
 			<key>IOPropertyMatch</key>
@@ -503,25 +503,102 @@
 		<key>Native Multitouch Engine</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>IOClass</key>
 			<string>VoodooI2CNativeEngine</string>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CMultitouchInterface</string>
 		</dict>
+		<key>Surface Ambient Light Sensor</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.xavier.BigSurface</string>
+			<key>IOClass</key>
+			<string>SurfaceAmbientLightSensorDriver</string>
+			<key>IOProbeScore</key>
+			<integer>400</integer>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>name</key>
+				<string>MSHW0184</string>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>VoodooI2CDeviceNub</string>
+		</dict>
+		<key>Surface Battery</key>
+		<dict>
+			<key>BatteryCount</key>
+			<integer>1</integer>
+			<key>CFBundleIdentifier</key>
+			<string>com.xavier.BigSurface</string>
+			<key>IOClass</key>
+			<string>SurfaceBatteryDriver</string>
+			<key>IOProviderClass</key>
+			<string>SurfaceBatteryNub</string>
+			<key>PerformanceMode</key>
+			<integer>1</integer>
+		</dict>
+		<key>Surface Battery SMBus Controller</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.xavier.BigSurface</string>
+			<key>IOClass</key>
+			<string>SurfaceSMBusController</string>
+			<key>IOProviderClass</key>
+			<string>SurfaceBatteryDriver</string>
+		</dict>
+		<key>Surface Button</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.xavier.BigSurface</string>
+			<key>IOClass</key>
+			<string>SurfaceButtonDriver</string>
+			<key>IONameMatch</key>
+			<string>MSHW0040</string>
+			<key>IOProbeScore</key>
+			<integer>400</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+		</dict>
 		<key>Surface HID</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>IOClass</key>
 			<string>SurfaceHIDDriver</string>
 			<key>IOProviderClass</key>
 			<string>SurfaceHIDNub</string>
 		</dict>
+		<key>Surface Management Engine</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.xavier.BigSurface</string>
+			<key>IOClass</key>
+			<string>SurfaceManagementEngineDriver</string>
+			<key>IOPCIMatch</key>
+			<string>0x34e48086 0x9d3e8086</string>
+			<key>IOProbeScore</key>
+			<integer>400</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+		<key>Surface Serial Hub</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.xavier.BigSurface</string>
+			<key>IOClass</key>
+			<string>SurfaceSerialHubDriver</string>
+			<key>IONameMatch</key>
+			<string>MSHW0084</string>
+			<key>IOProbeScore</key>
+			<integer>600</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+		</dict>
 		<key>Surface Touchpad HID Event Driver</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>DeviceUsagePairs</key>
 			<array>
 				<dict>
@@ -534,7 +611,12 @@
 			<key>IOClass</key>
 			<string>VoodooI2CPrecisionTouchpadHIDEventDriver</string>
 			<key>IOProbeScore</key>
-			<integer>400</integer>
+			<integer>300</integer>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>Transport</key>
+				<string>Surface Serial Hub</string>
+			</dict>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
 			<key>ProcessBluetoothMouseStopsTrackpad</key>
@@ -542,12 +624,14 @@
 			<key>ProcessUSBMouseStopsTrackpad</key>
 			<false/>
 			<key>QuietTimeAfterTyping</key>
-			<integer>400</integer>
+			<integer>200</integer>
+			<key>RM,deliverNotifications</key>
+			<true/>
 		</dict>
 		<key>Surface Touchscreen HID Event Driver</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>DeviceUsagePairs</key>
 			<array>
 				<dict>
@@ -558,16 +642,16 @@
 				</dict>
 			</array>
 			<key>IOClass</key>
-			<string>SurfaceTouchscreenHIDEventDriver</string>
+			<string>VoodooI2CTouchscreenHIDEventDriver</string>
 			<key>IOProbeScore</key>
 			<integer>400</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
 		</dict>
-		<key>Surface Type Cover HID Event Driver</key>
+		<key>Surface Type Cover</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>DeviceUsagePairs</key>
 			<array>
 				<dict>
@@ -578,9 +662,9 @@
 				</dict>
 			</array>
 			<key>IOClass</key>
-			<string>SurfaceTypeCoverHIDEventDriver</string>
+			<string>SurfaceTypeCoverDriver</string>
 			<key>IOProbeScore</key>
-			<integer>500</integer>
+			<integer>9999</integer>
 			<key>IOPropertyMatch</key>
 			<dict>
 				<key>Transport</key>
@@ -593,12 +677,14 @@
 			<key>ProcessUSBMouseStopsTrackpad</key>
 			<false/>
 			<key>QuietTimeAfterTyping</key>
-			<integer>400</integer>
+			<integer>200</integer>
+			<key>RM,deliverNotifications</key>
+			<true/>
 		</dict>
-		<key>VoodooI2C HID Device</key>
+		<key>VoodooI2CHIDDevice</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.xavier.BigSurfaceHIDDriver</string>
+			<string>com.xavier.BigSurface</string>
 			<key>IOClass</key>
 			<string>VoodooI2CHIDDevice</string>
 			<key>IOProbeScore</key>
@@ -613,26 +699,38 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.12</string>
+	<string>10.15</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2023 Xia Shangning. All rights reserved.</string>
+	<string>Copyright © 2021 Xavier Xia. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>1.0.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
+		<key>as.vit9696.Lilu</key>
+		<string>1.2.0</string>
+		<key>as.vit9696.VirtualSMC</key>
+		<string>1.2.0</string>
+		<key>com.alexandred.VoodooI2CServices</key>
+		<string>1.0</string>
 		<key>com.apple.iokit.IOACPIFamily</key>
 		<string>1.4</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>2.0</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>2.9</string>
+		<key>com.apple.iokit.IOSMBusFamily</key>
+		<string>1.0.0</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>16.7</string>
 		<key>com.apple.kpi.iokit</key>
 		<string>16.7</string>
 		<key>com.apple.kpi.libkern</key>
 		<string>16.7</string>
 		<key>com.apple.kpi.mach</key>
 		<string>16.7</string>
-		<key>com.xavier.BigSurface</key>
-		<string>1.1</string>
 		<key>com.xavier.VoodooSerial</key>
+		<string>1.2</string>
+		<key>org.coolstar.VoodooGPIO</key>
 		<string>1.2</string>
 	</dict>
 	<key>OSBundleRequired</key>

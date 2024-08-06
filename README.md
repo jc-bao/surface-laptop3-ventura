@@ -51,7 +51,6 @@ Please follow the [OpenCore guide](https://dortania.github.io/OpenCore-Install-G
 * **Enable HiDPI** (optional): the default setting only supports HiDPI given a certain resolution. To enable more HiDPI options, I used BetterDisplay and enabled the smooth scaling feature. You can also try [one-key-hidpi](https://github.com/xzhih/one-key-hidpi). 
 * **Wireless Network**: I use [itlwm](https://github.com/OpenIntelWireless/itlwm), don't forget to install [HeliPort](https://github.com/OpenIntelWireless/HeliPort) to manage the wireless network.
 * **Change SMBIOS**: Please do not use the same SMBIOS as mine. Generate your own SMBIOS with [GenSMBIOS](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html). 
-* **Disable MacOS Sleep**: I disabled sleep because it cannot wake up from sleep. You can disable sleep by running the following command in the terminal.  `sudo pmset -a disablesleep 1`
 
 ## Credits
 

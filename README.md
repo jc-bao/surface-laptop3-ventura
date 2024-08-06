@@ -37,7 +37,7 @@
 | Graphics Acceleration | ✅ | |
 | WiFi | ✅ | Airdrop, Handoff, Sidecar are not working. This is a known issue for `itlwm`. |
 | Touchscreen | ✅ | For multi-touch, you need to install IPTSDaemon. |
-| Sleep | ❌ | Cannot wake up from sleep. |
+| Sleep | :white_check_mark: | Can sleep and wake up well thanks to [jlempen](https://github.com/jlempen/Surface-IceLake-macOS-Hibernation-Fix/tree/main)'s method. |
 
 
 ## Installation
